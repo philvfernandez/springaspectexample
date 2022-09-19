@@ -25,6 +25,10 @@ public class VehicleServices {
     }
 
     public String moveVehicle(boolean vehicleStarted) {
+
+        //This will force null pointer exception to test LoggerException @AfterThrowing and @AfterReturning advice
+        //throw new NullPointerException("Damm!! Null Pointer exception occured!!");
+
         return tires.rotate();
     }
 
